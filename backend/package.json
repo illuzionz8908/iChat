@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build":"rm -rf dist && cp -r src dist",
+    "build": "shx rm -rf dist && shx cp -r src dist",
     "dev": "node --watch src/index.js",
     "start": "node src/index.js"
   },
@@ -18,5 +18,8 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongoose": "^9.10.0"
+  },
+  "devDependencies": {
+    "shx": "^0.4.0"
   }
 }
