@@ -12,7 +12,7 @@ const userSchema = new mongoose.Schema({
         unique: true,
     },
     fullName: {
-        tyoe: String,
+        type: String,
         required: true,
     },
     profilePic: {
